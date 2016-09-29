@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/t"
+        layout="@layout/panoramics_select_location_title_layout" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/contentView"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/t"
+        android:background="#7d7d7d"
+        android:orientation="vertical" >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/t"
+        android:background="@android:color/transparent" >
+
+        <ImageView
+            android:id="@+id/datouzhenImageView"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#00000000"
+            android:src="@drawable/p_mylocation_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/contentView" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ListView
+            android:id="@+id/locationListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

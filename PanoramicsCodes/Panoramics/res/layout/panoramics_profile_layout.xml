@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/global_bg_color" >
+
+    <include
+        android:id="@+id/t"
+        layout="@layout/panoramics_profile_title_layout" />
+
+    <ScrollView
+        android:id="@+id/contentScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/topLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <include layout="@layout/p_l_fullline" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/global_edittext_bg_color"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/nameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/p_profile_name" />
+
+                        <EditText
+                            android:id="@+id/uNicknameEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="150dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/pano_edit_profile_default_name"
+                            android:lines="1"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textColor="#40494c"
+                            android:textColorHint="#cacaca"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <include layout="@layout/p_l_centerline" />
+
+                    <LinearLayout
+                        android:id="@+id/nicknameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/p_profile_nickname" />
+
+                        <EditText
+                            android:id="@+id/uNameEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="150dp"
+                            android:background="@android:color/transparent"
+                            android:clickable="false"
+                            android:enabled="false"
+                            android:gravity="center_vertical"
+                            android:lines="1"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textColor="#7d7d7d"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <include layout="@layout/p_l_centerline" />
+
+                    <LinearLayout
+                        android:id="@+id/websiteLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/p_profile_website" />
+
+                        <EditText
+                            android:id="@+id/websiteEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="150dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/pano_edit_profile_default_website"
+                            android:lines="1"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textColor="#40494c"
+                            android:textColorHint="#cacaca"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <include layout="@layout/p_l_shortline" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/p_profile_bio" />
+
+                        <EditText
+                            android:id="@+id/bioEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/pano_edit_profile_default_bio"
+                            android:lines="1"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:textColor="#40494c"
+                            android:textColorHint="#cacaca"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <include layout="@layout/p_l_fullline" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="12dp" >
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:background="@drawable/p_profile_header_circle_bg" />
+
+                    <f.com.panoramics.view.CircleImageView
+                        android:id="@+id/headerImageView"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/changePasswordLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topLayout"
+                android:layout_marginTop="23dp"
+                android:background="@color/global_edittext_bg_color"
+                android:orientation="vertical" >
+
+                <include layout="@layout/p_l_fullline" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/iccImage"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/p_profile_lock" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/iccImage"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:text="@string/pano_edit_profile_change_password"
+                        android:textColor="#40494c"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/p_settings_right_arr" />
+                </RelativeLayout>
+
+                <include layout="@layout/p_l_fullline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tilViewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/changePasswordLayout"
+                android:layout_marginTop="2dp"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:text="PRIVATE INFOMATION"
+                    android:textColor="#a0a3a5"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomViewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tilViewLayout"
+                android:background="@color/global_edittext_bg_color"
+                android:orientation="vertical" >
+
+                <include layout="@layout/p_l_fullline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/p_eidttext_pre_email_icon" />
+
+                    <EditText
+                        android:id="@+id/mailEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/pano_edit_profile_default_mail"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:textColor="#40494c"
+                        android:textColorHint="#cacaca"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <include layout="@layout/p_l_shortline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/p_profile_phone" />
+
+                    <EditText
+                        android:id="@+id/phoneEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/pano_edit_profile_default_phone"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:textColor="#40494c"
+                        android:textColorHint="#cacaca"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <include layout="@layout/p_l_shortline" />
+
+                <LinearLayout
+                    android:id="@+id/genderLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/p_profile_sex" />
+
+                    <TextView
+                        android:id="@+id/sexEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/pano_edit_profile_default_gender"
+                        android:lines="1"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:textColor="#40494c"
+                        android:textColorHint="#cacaca"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <include layout="@layout/p_l_fullline" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/blank"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/bottomViewLayout"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

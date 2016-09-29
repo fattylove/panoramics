@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#edeeef"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/t"
+        layout="@layout/panoramics_setting_title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/p_l_full14line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="bottom"
+            android:paddingBottom="2dp"
+            android:text="@string/pano_setting_support"
+            android:textColor="#6f7577"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/p_l_full14line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f7f7"
+        android:orientation="vertical"
+        android:paddingBottom="20dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/feedbackBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/p_setting_button_bg"
+                android:text="@string/pano_setting_send_feedback"
+                android:textColor="#3f484b"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/privatePolicyBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/p_setting_button_bg"
+                android:text="@string/pano_setting_private_policy"
+                android:textColor="#3f484b"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/rateAroundBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/p_setting_button_bg"
+                android:text="@string/pano_setting_rate_around"
+                android:textColor="#3f484b"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/shareBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/p_setting_button_bg"
+                android:text="@string/pano_setting_share_the_joy"
+                android:textColor="#3f484b"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/p_l_full14line" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/p_setting_logou_button_bg"
+        android:text="@string/pano_setting_log_out"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

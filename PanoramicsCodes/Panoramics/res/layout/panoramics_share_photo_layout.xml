@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg_color" >
+
+    <include
+        android:id="@+id/t"
+        layout="@layout/panoramics_share_photo_title_layout" />
+
+    <ImageView
+        android:id="@+id/topImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/t"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/tagLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topImageView"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="@string/pano_share_tags"
+                android:textColor="#a0a3a5"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <include layout="@layout/p_l_fullline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/global_edittext_bg_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/tagEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/pano_share_hint_tags" />
+        </LinearLayout>
+
+        <include layout="@layout/p_l_fullline" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/locationLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tagLayout"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="@string/pano_share_location"
+                android:textColor="#a0a3a5"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <include layout="@layout/p_l_fullline" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/global_edittext_bg_color"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:id="@+id/imgLayout"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/p_default_earth_bg"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/locationIconImageView"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerInParent="true" />
+
+                <ProgressBar
+                    android:id="@+id/smallProgressBar"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/locationEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/changeBtn"
+                android:layout_toRightOf="@+id/imgLayout"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:textColor="#7d7d7d"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/changeBtn"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/p_change_btn"
+                android:text="@string/pano_share_change" />
+        </RelativeLayout>
+
+        <include layout="@layout/p_l_fullline" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/shareBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/locationLayout"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/p_btn_bg"
+        android:text="@string/pano_share_title"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

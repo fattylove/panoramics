@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/t"
+        layout="@layout/panoramics_add_comment_title_layout" />
+
+    <ImageView
+        android:id="@+id/topImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#fff" >
+
+            <EditText
+                android:id="@+id/contentTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/sendBtn"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/pano_comment_hint_add_a_comment"
+                android:lineSpacingExtra="5dp"
+                android:maxHeight="100dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:id="@+id/sendBtn"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/contentTextView"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/p_comment_btn_bg"
+                android:text="@string/pano_comment_send"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#edeeef"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/fowLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/fowImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/p_pcenter_flow_default" />
+
+            <TextView
+                android:id="@+id/fowTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-8dp"
+                android:layout_toRightOf="@+id/fowImageView"
+                android:text="@string/pano_pcenter_flow"
+                android:textColor="#3f484b"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/fowImageViewPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/fowTextView"
+                android:background="@drawable/p_pcenter_point"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/locationLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/locationImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/p_pcenter_location_default" />
+
+            <TextView
+                android:id="@+id/locationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-8dp"
+                android:layout_toRightOf="@+id/locationImageView"
+                android:text="@string/pano_pcenter_location"
+                android:textColor="#3f484b"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/locationImageViewPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/locationTextView"
+                android:background="@drawable/p_pcenter_point"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/likesLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/likeImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/p_pcenter_like_default" />
+
+            <TextView
+                android:id="@+id/likeHereTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-8dp"
+                android:layout_toRightOf="@+id/likeImageView"
+                android:text="@string/pano_pcenter_liked"
+                android:textColor="#3f484b"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/likeImageViewPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/likeHereTextView"
+                android:background="@drawable/p_pcenter_point"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#30000000" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#10000000" />
+
+</LinearLayout>

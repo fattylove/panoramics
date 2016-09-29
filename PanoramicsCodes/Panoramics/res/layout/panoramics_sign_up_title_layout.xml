@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/title_bg_color"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dip"
+        android:background="@android:color/transparent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/pano_sign_up_cancel"
+        android:textColor="#ffffff"
+        android:textStyle="bold" >
+    </Button>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/pano_sign_up_title"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/rightBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:background="@android:color/transparent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/pano_sign_in_title"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+</RelativeLayout>

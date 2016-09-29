@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/t"
+        layout="@layout/panoramics_sign_in_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/global_edittext_bg_color"
+        android:orientation="vertical" >
+
+        <include layout="@layout/p_l_fullline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/p_eidttext_pre_email_icon" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/pano_sign_eamil_address"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <include layout="@layout/p_l_shortline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/p_eidttext_pre_lock_icon" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/pano_sign_password"
+                android:inputType="textPassword"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <include layout="@layout/p_l_fullline" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/p_btn_bg"
+        android:text="@string/pano_sign_in_title"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+</LinearLayout>

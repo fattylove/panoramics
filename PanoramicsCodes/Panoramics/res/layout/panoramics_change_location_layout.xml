@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/t"
+        layout="@layout/panoramics_change_location_title_layout" />
+
+    <TextView
+        android:id="@+id/title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="GUESS YOUR IN:"
+        android:textColor="#7a7f81"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <include layout="@layout/p_l_fullline" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f7f7" >
+
+        <RelativeLayout
+            android:id="@+id/nowImgLayout"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/p_default_earth_bg"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/locationIconImageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true" />
+
+            <ProgressBar
+                android:id="@+id/smallProgressBar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/locationEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/nowImgLayout"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textColor="#7d7d7d"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/p_l_fullline" />
+
+    <TextView
+        android:id="@+id/title_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="OTHER PLACE:"
+        android:textColor="#7a7f81"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <include layout="@layout/p_l_fullline" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f6f7f7"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/inverseProgressBar"
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<resources>
+
+    <string name="app_name">Panoramics</string>
+
+    <!-- global code -->
+    <string name="pano_errorcode_400">Error Code 400</string>
+    <string name="pano_errorcode_401">Error Code 401</string>
+    <string name="pano_errorcode_404">Error Code 404</string>
+    <string name="pano_errorcode_409">Error Code 409</string>
+    <string name="pano_errorcode_500">Error Code 500</string>
+    <string name="pano_errorcode_network_error">No Internet Connection</string>
+
+    <!-- SelectLogin -->
+    <string name="pano_select_login_facebook">Login with Facebook</string>
+    <string name="pano_select_login_twitter">Login with Twitter</string>
+    <string name="pano_select_login_with_email">Sign up with E-mail</string>
+    <string name="pano_select_login_have_account">I already have a account</string>
+
+    <!-- Sign In and Sign Up -->
+    <string name="pano_sign_in_title">Sign In</string>
+    <string name="pano_sign_up_title">Sign Up</string>
+    <string name="pano_sign_eamil_address">E-mail Address</string>
+    <string name="pano_sign_password">Password</string>
+    <string name="pano_sign_up_cancel">Cancel</string>
+    <string name="pano_sign_up_confirm_password">Confirm Password</string>
+    <string name="pano_sign_up_by_signing_up">By signing up,you agree to our</string>
+    <string name="pano_sign_up_private_prolicy">&#160;private prolicy</string>
+    <string name="pano_sign_error_email_is_empty">E-mail is empty.</string>
+    <string name="pano_sign_error_please_enter_a_correct_email_address">Please enter a correct email address.</string>
+    <string name="pano_sign_error_wrong_password">Wrong password.</string>
+    <string name="pano_sign_error_you_need_a_safety_password">You need a safety password.</string>
+    <string name="pano_sign_error_password_does_not_match">Password does not match.</string>
+
+    <!-- Home -->
+    <string name="pano_home_feed">Feed</string>
+    <string name="pano_home_world">World</string>
+    <string name="pano_home_hot">Hot</string>
+    <string name="pano_home_newest">Newest</string>
+
+    <!-- PCenter -->
+    <string name="pano_pcenter_followers">FOLLOWERS</string>
+    <string name="pano_pcenter_likes">LIKES</string>
+    <string name="pano_pcenter_following">FOLLOWING</string>
+    <string name="pano_pcenter_edit_your_profile">Edit Your Profile</string>
+    <string name="pano_pcenter_flow">Flow</string>
+    <string name="pano_pcenter_location">Location</string>
+    <string name="pano_pcenter_liked">Liked</string>
+    <string name="pano_pcenter_loading">Loading...</string>
+    <string name="pano_pcenter_follow">Follow</string>
+    <string name="pano_pcenter_unfollow">UnFollow</string>
+
+    <!-- Options -->
+    <string name="pano_setting_options">Options</string>
+    <string name="pano_setting_support">SUPPORT</string>
+    <string name="pano_setting_send_feedback">Send Feedback</string>
+    <string name="pano_setting_private_policy">Private Policy</string>
+    <string name="pano_setting_rate_around">Rate Around</string>
+    <string name="pano_setting_share_the_joy">Share the joy</string>
+    <string name="pano_setting_log_out">LOG OUT</string>
+
+    <!-- Edit Profile -->
+    <string name="pano_edit_profile_done">Done</string>
+    <string name="pano_edit_profile_title">Edit Profile</string>
+    <string name="pano_edit_profile_default_name">Name</string>
+    <string name="pano_edit_profile_default_nicknae">Nickname</string>
+    <string name="pano_edit_profile_default_website">Website</string>
+    <string name="pano_edit_profile_default_bio">Bio</string>
+    <string name="pano_edit_profile_default_mail">E-mail</string>
+    <string name="pano_edit_profile_default_phone">+0</string>
+    <string name="pano_edit_profile_default_gender">Not Specified</string>
+    <string name="pano_edit_profile_change_password">Change Password</string>
+
+    <!-- Share -->
+    <string name="pano_share_title">Share</string>
+    <string name="pano_share_tags">TAGS:</string>
+    <string name="pano_share_hint_tags">Please input your Tags.</string>
+    <string name="pano_share_location">LOCATION:</string>
+    <string name="pano_share_change">Change</string>
+    <string name="pano_share_and_share_the_joy_with">AND SHARE THE JOY WITH</string>
+    <string name="pano_share_unknow">Unknow</string>
+
+    <!-- Comment -->
+    <string name="pano_comment_add_a_comment">Add a Comment</string>
+    <string name="pano_comment_hint_add_a_comment">Add a comment...</string>
+    <string name="pano_comment_title">Comment</string>
+    <string name="pano_comment_send">Send</string>
+
+    <!-- gender actionSheet -->
+    <string name="pano_actionsheet_male">Male</string>
+    <string name="pano_actionsheet_female">Female</string>
+    <string name="pano_actionsheet_others">Others</string>
+
+    <!-- photo actionSheet -->
+    <string name="pano_actionsheet_take_a_photo">Take a photo</string>
+    <string name="pano_actionsheet_from_camera_roll">From Camera Roll</string>
+
+    <!-- remove actionSheet -->
+    <string name="pano_actionsheet_remove_title">Remove it?</string>
+    <string name="pano_actionsheet_report_title">Report it?</string>
+    <string name="pano_actionsheet_remove_report_title">Remove or Report it?</string>
+    <string name="pano_actionsheet_remove">Remove</string>
+    <string name="pano_actionsheet_report">Report</string>
+
+</resources>
